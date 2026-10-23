@@ -1,0 +1,19 @@
+{
+  "name": "@notebook-lm-clone/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts"
+}

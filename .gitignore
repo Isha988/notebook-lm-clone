@@ -1,0 +1,60 @@
+# ── Dependencies ──────────────────────────────
+node_modules
+.pnpm-store
+.pnpm-debug.log*
+
+# Stray lock files (this repo uses the root pnpm-lock.yaml only)
+package-lock.json
+yarn.lock
+
+# ── Build output ─────────────────────────────
+dist
+build
+out
+.next
+*.tsbuildinfo
+next-env.d.ts
+# tsc emits next to sources in packages/* (no outDir set); sources are .ts only
+packages/*/src/**/*.d.ts
+packages/*/src/**/*.d.ts.map
+packages/*/src/**/*.js
+packages/*/src/**/*.js.map
+
+# ── Turborepo / Vercel ───────────────────────
+.turbo
+.vercel
+
+# ── Environment variables ────────────────────
+# Real secrets never get committed; .env.example files do
+.env
+.env.*
+!.env.example
+
+# ── Testing ──────────────────────────────────
+coverage
+.nyc_output
+
+# ── Logs ─────────────────────────────────────
+logs
+*.log
+npm-debug.log*
+
+# ── Claude Code (personal, not shared) ───────
+CLAUDE.local.md
+.claude/settings.local.json
+
+# ── Editors & OS ─────────────────────────────
+.DS_Store
+Thumbs.db
+.idea
+*.swp
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ── App data (NotebookLM clone) ──────────────
+# Local uploads, vector DBs and caches created while developing
+uploads
+tmp
+*.sqlite
+*.db
